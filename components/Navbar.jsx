@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaGithub, FaTimes } from "react-icons/fa";
 import "../fonts/fonts.css";
 
 const Navbar = () => {
@@ -49,15 +49,15 @@ const Navbar = () => {
               About Us
             </li>
           </Link>
-          <li className="flex justify-center items-center lg:flex-row gap-3 py-2 lg:py-0">
+          <li className="flex justify-center items-center lg:flex-row gap-3 py-2 lg:py-0 mx-1">
             <Link href="#">
-              <button className="bg-emerald-700 lg:hover:bg-emerald-900 lg:hover:text-gray-300 shadow-lg rounded-xl px-4 py-1 transition duration-300">
-                Try Now
+              <button className="bg-emerald-700 lg:hover:bg-emerald-900 lg:hover:text-gray-300 shadow-lg rounded-xl px-4 py-1 transition duration-300 text-sm">
+                Try it
               </button>
             </Link>
             <Link href="#">
-              <button className="bg-emerald-700 lg:hover:bg-emerald-900 lg:hover:text-gray-300 shadow-lg rounded-xl px-4 py-1 transition duration-300">
-                Github
+              <button className="bg-emerald-700 lg:hover:bg-emerald-900 lg:hover:text-gray-300 shadow-lg rounded-xl px-4 py-1 transition duration-300 text-xs">
+                <FaGithub className="text-xl" />
               </button>
             </Link>
           </li>
