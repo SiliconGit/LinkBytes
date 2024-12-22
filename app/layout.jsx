@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "LinkBytes",
   description: "Effortless link shortner by Silicon",
+  icons: {
+    icon: "./LinkedBytesLogoPNG.png",
+  },
 };
 
 export default function RootLayout({ children }) {

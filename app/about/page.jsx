@@ -1,59 +1,72 @@
 "use client";
 import React from "react";
+import { FaBolt, FaLink, FaStar } from "react-icons/fa";
+
+const metadata = {
+  title: "About LinkBytes",
+  description: "Its Origin and Purpose",
+};
 
 const About = () => {
   return (
-    <section className="bg-gray-100 min-h-screen flex items-center justify-center py-12 px-4">
-      <div className="bg-white shadow-xl rounded-xl p-10 max-w-4xl text-center space-y-8">
-        <h1 className="text-4xl font-bold text-emerald-900">
-          About LinkBytes 🌟
+    <section className="bg-gradient-to-r from-emerald-50 to-gray-200 min-h-screen flex items-center justify-center py-16 px-6">
+      <div className="bg-white shadow-lg rounded-xl p-8 max-w-3xl text-center space-y-6">
+        {/* Heading Section */}
+        <h1 className="text-4xl font-semibold text-emerald-900 leading-tight">
+          About LinkBytes
         </h1>
-        <p className="text-gray-700 text-lg leading-relaxed">
-          Welcome to{" "}
-          <span className="font-semibold text-emerald-700">LinkBytes</span>, a
-          platform born from sheer determination and the belief in making
-          digital experiences smoother. No handouts, no shortcuts—just pure
-          effort and passion. This is my story. 🚀
+        <p className="text-lg text-gray-700 max-w-xl mx-auto">
+          LinkBytes was created to simplify the way we share links—no more
+          cluttered, long URLs. Built from scratch with a clear vision: make
+          digital life simpler, one link at a time.
         </p>
 
-        <div className="space-y-6">
-          <h2 className="text-2xl font-semibold text-emerald-800">
-            The Journey 🛠️
-          </h2>
-          <p className="text-gray-700 text-base leading-relaxed">
-            It all started with a challenge: long, cumbersome URLs making life
-            online frustrating. I took it upon myself to create a solution. With
-            no external support, I poured my time, energy, and heart into
-            building
-            <span className="font-semibold text-emerald-700"> LinkBytes</span>.
-            Every line of code, every design choice reflects my vision of
-            simplicity and functionality. ✂️🔗
-          </p>
-          <p className="text-gray-700 text-base leading-relaxed">
-            Through long nights and endless problem-solving, I transformed an
-            idea into reality.{" "}
-            <span className="font-semibold text-emerald-700">LinkBytes</span>
-            isn’t just a project; it’s a testament to what dedication and hard
-            work can achieve. 💻✨
+        {/* The Journey Section */}
+        <div className="space-y-4">
+          <h2 className="text-2xl font-medium text-emerald-800">The Journey</h2>
+          <p className="text-gray-700 text-base">
+            Frustrated by long and confusing URLs, I created LinkBytes to make
+            sharing links as effortless as possible. Hours of learning and
+            coding led to this simple yet powerful tool.
           </p>
         </div>
 
+        {/* What I Stand For Section */}
         <div className="space-y-6">
-          <h2 className="text-2xl font-semibold text-emerald-800">
-            What I Stand For 💡
+          <h2 className="text-2xl font-medium text-emerald-800">
+            What I Stand For
           </h2>
-          <ul className="text-gray-700 text-base leading-relaxed list-disc list-inside">
-            <li>Simplifying the way we share and manage links. ⚡</li>
-            <li>Offering a sleek, fast, and reliable user experience. 🔗</li>
-            <li>Proving that with determination, anything is possible. 🌟</li>
+          <ul className="space-y-4 flex justify-center items-center flex-col">
+            <li className="flex items-center justify-start space-x-3 text-gray-700 hover:text-emerald-700 transition duration-300">
+              <FaBolt className="text-2xl text-emerald-700" />
+              <span>
+                Simplicity: Making link sharing seamless and quick. ⚡
+              </span>
+            </li>
+            <li className="flex items-center justify-start space-x-3 text-gray-700 hover:text-emerald-700 transition duration-300">
+              <FaLink className="text-2xl text-emerald-700" />
+              <span>Reliability: Ensuring every link works smoothly. 🔗</span>
+            </li>
+            <li className="flex items-center justify-start space-x-3 text-gray-700 hover:text-emerald-700 transition duration-300">
+              <FaStar className="text-2xl text-emerald-700" />
+              <span>
+                Dedication: Building LinkBytes with passion and purpose. 🌟
+              </span>
+            </li>
           </ul>
         </div>
 
-        <p className="text-gray-700 text-lg">
-          <span className="font-semibold text-emerald-700">LinkBytes</span> is
-          more than a tool—it's a symbol of perseverance. Thank you for being
-          part of this journey. Together, let’s create a better web! 🌍✨
+        {/* Final Thoughts */}
+        <p className="text-lg text-gray-700">
+          LinkBytes isn’t just a tool; it’s a symbol of what can be achieved
+          through dedication and perseverance. Join me in simplifying the web!
         </p>
+        <a
+          href="#"
+          className="text-lg font-semibold text-emerald-700 hover:text-emerald-900 transition duration-300"
+        >
+          Join the Movement 🌍
+        </a>
       </div>
     </section>
   );

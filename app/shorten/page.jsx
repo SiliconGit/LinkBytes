@@ -2,6 +2,11 @@
 import Link from "next/link";
 import React, { useState } from "react";
 
+const metadata = {
+  title: "Shotener",
+  description: "URL Modifier and Shortener provided by Silicon",
+};
+
 const Shorten = () => {
   const [Url, setUrl] = useState("");
   const [shortUrl, setshortUrl] = useState("");

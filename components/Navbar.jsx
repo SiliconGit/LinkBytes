@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaBars, FaGithub, FaTimes } from "react-icons/fa";
+import Image from "next/image";
 import "../fonts/fonts.css";
 
 const Navbar = () => {
@@ -17,9 +18,16 @@ const Navbar = () => {
 
   return (
     <nav className="bg-emerald-950 text-white p-4 lg:px-8 m-4 rounded-xl sticky top-4 z-20">
-      <div className="flex items-center justify-between">
-        <div className="logo">
-          <h1 className="text-xl font-bold">LinkBytes</h1>
+      <div className="flex items-center justify-between ">
+        <div className="logo flex justify-center items-center gap-2">
+          <Image
+            src="/LinkedBytesLogoPNG.png"
+            width={150}
+            height={150}
+            alt=""
+            className="invert brightness-150 h-5 w-6"
+          />
+          <h1 className="text-xl font-bold ">LinkBytes</h1>
         </div>
 
         <button
