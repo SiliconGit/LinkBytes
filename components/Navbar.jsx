@@ -58,12 +58,12 @@ const Navbar = () => {
             </li>
           </Link>
           <li className="flex justify-center items-center lg:flex-row gap-3 py-2 lg:py-0 mx-1">
-            <Link href="#">
+            <Link href="/shorten">
               <button className="bg-emerald-700 lg:hover:bg-emerald-900 lg:hover:text-gray-300 shadow-lg rounded-xl px-4 py-1 transition duration-300 text-sm">
                 Try it
               </button>
             </Link>
-            <Link href="#">
+            <Link href="https://github.com/SiliconGit/LinkBytes">
               <button className="bg-emerald-700 lg:hover:bg-emerald-900 lg:hover:text-gray-300 shadow-lg rounded-xl px-4 py-1 transition duration-300 text-xs">
                 <FaGithub className="text-xl" />
               </button>
